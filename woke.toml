@@ -10,7 +10,7 @@ ignore_paths = ["node_modules", ".woke-build", "venv", "lib"]
 cmd = "anvil"
 
 [testing.anvil]
-cmd_args = "--prune-history 100 --steps-tracing --silent"
+cmd_args = "--prune-history 5 --transaction-block-keeper 5 --steps-tracing --silent"
 
 [testing.ganache]
 cmd_args = "-k istanbul -q"
