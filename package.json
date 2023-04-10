@@ -1,7 +1,7 @@
 {
-  "name": "ethereum-zurich-fuzzing",
+  "name": "ethereum-zurich-workshop",
   "version": "1.0.0",
-  "description": "Example fuzzing project for EthereumZuri.ch workshop",
+  "description": "Example project for EthereumZuri.ch workshop",
   "author": "Ackee Blockchain",
   "license": "ISC",
   "dependencies": {
