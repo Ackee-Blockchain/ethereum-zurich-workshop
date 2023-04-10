@@ -27,8 +27,6 @@ def on_revert(f):
         except TransactionRevertedError as e:
             if e.tx is not None:
                 print(e.tx.call_trace)
-                raise
-        else:
             raise
 
     return wrapper
@@ -100,6 +98,9 @@ class T(FuzzTest):
     def flow_deploy(self):
         name = random_string(5, 10)
         symbol = random_string(3, 3, alphabet=string.ascii_uppercase)
+        while self.gw1.tokenAddresses(symbol) != Address.ZERO or self.gw2.tokenAddresses(symbol) != Address.ZERO:
+            symbol = random_string(3, 3, alphabet=string.ascii_uppercase)
+
         token1 = ERC20MintableBurnable.deploy(name, symbol, 18, from_=self.deployer, chain=chain1)
         token2 = ERC20MintableBurnable.deploy(name, symbol, 18, from_=self.deployer, chain=chain2)
         self.tokens.append(token1)
