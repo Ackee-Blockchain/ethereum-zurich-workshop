@@ -3,7 +3,7 @@ This is an example project for the EthereumZuri.ch (2023) "Efficient cross-chain
 ## Setup
 
 - Install Woke:
-    - `pip3 install woke`
+    - `pip3 install -U woke`
 - Install node dependencies:
     - `npm ci`
 - Generate pytypes:
