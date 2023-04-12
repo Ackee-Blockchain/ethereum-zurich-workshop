@@ -110,7 +110,7 @@ class T(FuzzTest):
 
         logger.debug(f"Deployed {token1.symbol()} at {token1.address} and {token2.symbol()} at {token2.address}")
 
-    @flow()
+    @flow(weight=60)
     def flow_mint(self):
         if len(self.tokens) == 0:
             return
