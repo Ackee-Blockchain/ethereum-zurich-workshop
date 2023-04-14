@@ -4,6 +4,8 @@ This is an example project for the EthereumZuri.ch (2023) "Efficient cross-chain
 
 - Install Woke:
     - `pip3 install -U woke`
+- Install [Foundry](https://github.com/foundry-rs/foundry):
+    - `curl -L https://foundry.paradigm.xyz | bash`
 - Install node dependencies:
     - `npm ci`
 - Generate pytypes:
