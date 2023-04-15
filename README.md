@@ -6,6 +6,11 @@ This is an example project for the EthereumZuri.ch (2023) "Efficient cross-chain
     - `pip3 install -U woke`
 - Install [Foundry](https://github.com/foundry-rs/foundry):
     - `curl -L https://foundry.paradigm.xyz | bash`
+    - follow the instructions printed to the terminal
+- Clone this repository:
+    - `git clone https://github.com/Ackee-Blockchain/ethereumzurich-2023-workshop-fuzzing.git`
+- Enter the cloned repository:
+    - `cd ethereumzurich-2023-workshop-fuzzing`
 - Install node dependencies:
     - `npm ci`
 - Generate pytypes:
